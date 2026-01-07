@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Betűtípus Letöltése</title>
     <style>
-        /* 1. Itt mondjuk meg a böngészőnek, hogyan használja a fájlt */
         @font-face {
-            font-family: Szvg-Regular.otf;
-            /* Cseréld ki a 'fontod-neve.otf' részt a te fájlod pontos nevére! */
-            src: url('fontod-neve.otf') format('opentype');
+            /* 1. HIBA JAVÍTVA: A font-family egy tetszőleges név legyen idézőjelben */
+            font-family: 'SajatBetu';
+            /* 2. HIBA JAVÍTVA: Itt a fájl pontos neve kell, ami nálad: Szvg-Regular.otf */
+            src: url('Szvg-Regular.otf') format('opentype');
         }
 
         body {
@@ -24,7 +24,7 @@
         }
 
         .preview {
-            /* Ez a rész fogja használni a te betűtípusodat */
+            /* Itt hivatkozunk a fent megadott 'SajatBetu' névre */
             font-family: 'SajatBetu', serif;
             font-size: 48px;
             margin-bottom: 20px;
@@ -42,7 +42,7 @@
         }
 
         .download-btn:hover {
-            background-color: #32c2ad;
+            background-color: #28a391;
         }
     </style>
 </head>
@@ -53,8 +53,8 @@
         (Árvíztűrő tükörfúrógép)
     </div>
 
-    <!-- Fontos: a href után írd oda a fájlod nevét kiterjesztéssel együtt -->
-    <a href=Szvg-Regular.otf download class="download-btn">
+    <!-- Javítva: Idézőjelek közé tettem a fájlnevet -->
+    <a href="Szvg-Regular.otf" download class="download-btn">
         Letöltés (.OTF)
     </a>
 
