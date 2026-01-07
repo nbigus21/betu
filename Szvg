@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betűtípus Letöltése</title>
+    <style>
+        /* 1. Itt mondjuk meg a böngészőnek, hogyan használja a fájlt */
+        @font-face {
+            font-family: Szvg-Regular.otf;
+            /* Cseréld ki a 'fontod-neve.otf' részt a te fájlod pontos nevére! */
+            src: url('fontod-neve.otf') format('opentype');
+        }
+
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #BFF5ED;
+            margin: 0;
+        }
+
+        .preview {
+            /* Ez a rész fogja használni a te betűtípusodat */
+            font-family: 'SajatBetu', serif;
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .download-btn {
+            background-color: #32c2ad;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #32c2ad;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="preview">
+        Így néz ki a saját betűtípusom!<br>
+        (Árvíztűrő tükörfúrógép)
+    </div>
+
+    <!-- Fontos: a href után írd oda a fájlod nevét kiterjesztéssel együtt -->
+    <a href=Szvg-Regular.otf download class="download-btn">
+        Letöltés (.OTF)
+    </a>
+
+</body>
+</html>
